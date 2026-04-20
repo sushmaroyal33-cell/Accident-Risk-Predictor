@@ -54,11 +54,11 @@ if st.button("🚀 Predict Risk"):
         st.error("⚠️ High Accident Risk!")
         st.balloons()
 
-        client.messages.create(
-            body=f"🚨 Accident Alert!\nSpeed: {speed}\nWeather: {weather}\nTime: {time}",
-            from_="+14782426447",
-            to="+918179804944"
-        )
+       # client.messages.create(
+#     body=f"🚨 Accident Alert!\nSpeed: {speed}\nWeather: {weather}\nTime: {time}",
+#     from_="YOUR_TWILIO_NUMBER",
+#     to="YOUR_NUMBER"
+# )
 
         st.success("📩 SMS Alert Sent!")
 
